@@ -1,57 +1,105 @@
-<!DOCTYPE html>
-<html lang="en">
+body {
+  font-family: 'Montserrat', sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  background-color: #f7f7f7;
+  color: #333;
+}
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Your Technical Writing Portfolio</title>
-  <link rel="stylesheet" href="styles.css">
-  <!-- Google Fonts -->
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap">
-</head>
+header {
+  background-color: #007BFF;
+  color: #fff;
+  padding: 1rem;
+  text-align: center;
+}
 
-<body>
-  <header>
-    <h1>Your Name</h1>
-    <nav>
-      <ul>
-        <li><a href="#about">About</a></li>
-        <li><a href="#portfolio">Portfolio</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
+header h1 {
+  margin: 0;
+  font-size: 2.5rem;
+}
 
-  <section id="about">
-    <div class="container">
-      <h2>About Me</h2>
-      <p>
-        Add your introduction and information about your technical writing background here.
-      </p>
-    </div>
-  </section>
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 1rem 0;
+}
 
-  <section id="portfolio">
-    <div class="container">
-      <h2>Portfolio</h2>
-      <!-- Add your portfolio items here -->
-      <div class="portfolio-item">
-        <h3>Project Title</h3>
-        <p>Project description goes here.</p>
-        <img src="path/to/your/image.jpg" alt="Project Image">
-      </div>
-    </div>
-  </section>
+nav ul li {
+  display: inline-block;
+  margin-right: 1rem;
+}
 
-  <section id="contact">
-    <div class="container">
-      <h2>Contact Me</h2>
-      <p>
-        You can reach me at your.email@example.com.
-      </p>
-    </div>
-  </section>
+nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.2rem;
+}
 
-</body>
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 2rem;
+}
 
-</html>
+section {
+  padding: 4rem 0;
+}
+
+section h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: #007BFF;
+}
+
+.portfolio-item {
+  margin-bottom: 3rem;
+}
+
+.portfolio-item h3 {
+  margin: 0;
+  font-size: 1.8rem;
+}
+
+.portfolio-item p {
+  margin-top: 0.5rem;
+}
+
+img {
+  max-width: 100%;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form {
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.contact-form input,
+.contact-form textarea {
+  display: block;
+  width: 100%;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.contact-form button {
+  display: block;
+  width: 100%;
+  padding: 1rem;
+  font-size: 1rem;
+  background-color: #007BFF;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+  background-color: #0056b3;
+}
